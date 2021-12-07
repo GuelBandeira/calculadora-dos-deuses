@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <!-- Optional theme -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+      integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <link rel="icon" href="icon.ico" type="image/x-icon" />
+
+    <title>Calculadora</title>
+  </head>
+  <body>
+    <main>
+      <!-- CÍRCULOS DE BACKGROUND -->
+      <div class="context"></div>
+      <div class="area">
+        <ul class="circles">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+
+      <!-- CALCULADORA -->
+      <div id="calculadora">
+        <div class="row">
+          <input type="text" name="display" id="display" readonly />
+        </div>
+        <div class="row">
+          <button
+            class="btn btn-default btn-calc"
+            value="7"
+            onclick="inserir(value)"
+          >
+            7
+          </button>
+          <button
+            class="btn btn-default btn-calc"
+            value="8"
+            onclick="inserir(value)"
+          >
+            8
+          </button>
+          <button
+            class="btn btn-default btn-calc"
+            value="9"
+            onclick="inserir(value)"
+          >
+            9
+          </button>
+          <button
+            class="btn btn-default btn-calc"
+            value="+"
+            onclick="inserir(value)"
+          >
+            +
+          </button>
+        </div>
+        <div class="row">
+          <button
+            class="btn btn-default btn-calc"
+            value="4"
+            onclick="inserir(value)"
+          >
+            4
+          </button>
+          <button
+            class="btn btn-default btn-calc"
+            value="5"
+            onclick="inserir(value)"
+          >
+            5
+          </button>
+          <button
+            class="btn btn-default btn-calc"
+            value="6"
+            onclick="inserir(value)"
+          >
+            6
+          </button>
+          <button
+            class="btn btn-default btn-calc"
+            value="-"
+            onclick="inserir(value)"
+          >
+            -
+          </button>
+        </div>
+        <div class="row">
+          <button
+            class="btn btn-default btn-calc"
+            value="1"
+            onclick="inserir(value)"
+          >
+            1
+          </button>
+          <button
+            class="btn btn-default btn-calc"
+            value="2"
+            onclick="inserir(value)"
+          >
+            2
+          </button>
+          <button
+            class="btn btn-default btn-calc"
+            value="3"
+            onclick="inserir(value)"
+          >
+            3
+          </button>
+          <button
+            class="btn btn-default btn-calc"
+            value="*"
+            onclick="inserir(value)"
+          >
+            x
+          </button>
+        </div>
+        <div class="row">
+          <button
+            class="btn btn-default btn-calc"
+            id="igual"
+            value="="
+            onclick="calcular()"
+          >
+            =
+          </button>
+          <button
+            class="btn btn-default btn-calc"
+            value="0"
+            onclick="inserir(value)"
+          >
+            0
+          </button>
+          <button
+            class="btn btn-default btn-calc"
+            value="."
+            onclick="inserir(value)"
+          >
+            .
+          </button>
+          <button
+            class="btn btn-default btn-calc"
+            value="/"
+            onclick="inserir(value)"
+          >
+            /
+          </button>
+        </div>
+        <div class="row highlight">
+          <button class="btn btn-default clear" onclick="limpar()">C</button>
+        </div>
+      </div>
+    </main>
+    <!-- FIM DA CALCULADORA -->
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
